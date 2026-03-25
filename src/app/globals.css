@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--terminal-font);
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 12%, rgba(90, 209, 255, 0.08), transparent 28%),
+    radial-gradient(circle at 82% 80%, rgba(139, 125, 255, 0.08), transparent 30%),
+    var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@keyframes clock-jitter {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(-1px, 1px) rotate(-0.4deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(0.35deg);
+  }
+  60% {
+    transform: translate(-1px, -1px) rotate(-0.25deg);
+  }
+  80% {
+    transform: translate(1px, 1px) rotate(0.3deg);
+  }
+}
+
+.clock-kyiv-hover:hover {
+  animation: clock-jitter 0.35s ease-in-out infinite;
+}
