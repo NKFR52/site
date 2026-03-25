@@ -11,5 +11,6 @@ export type Song = {
 export const songs: Song[] = [
   { title: "никита", artist: "N1KOTIN", url: "/music/file1.mp3" },
   { title: "I_Suss", artist: "Ленинград", url: "/music/file2.mp3" },
-  { title: "hunter eyes", artist: "laydownrot", url: "/music/file3.mp3" }
+  { title: "hunter eyes", artist: "laydownrot", url: "/music/file3.mp3" },
+  { title: "UR THE MOON", artist: "Playboi Carti", url: "/music/file4.mp3" },
 ];
